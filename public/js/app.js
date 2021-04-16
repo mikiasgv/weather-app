@@ -1851,6 +1851,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   mounted: function mounted() {
     console.log('Component mounted.');
@@ -37418,7 +37423,16 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [_c("h1", [_vm._v("Waether App")])])
+    return _c("div", { staticClass: "text-white mb-8" }, [
+      _c("div", { staticClass: "places-input text-gray-800" }, [
+        _c("input", {
+          staticClass: "w-full",
+          attrs: { type: "text", name: "", id: "" }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "weather-container" })
+    ])
   }
 ]
 render._withStripped = true
